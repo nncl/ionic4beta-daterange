@@ -10,3 +10,31 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+.mydrp .currmonth {
+    background-color: transparent !important;
+}
+
+.mydrp .daycell:hover, .mydrp .monthcell:hover, .mydrp .yearcell:hover {
+    background-color: purple !important;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 0;
+}
+
+.mydrp .selecteddaybegin, .mydrp .selecteddayend, .mydrp .selectedmonth .monthvalue, .mydrp .selectedyear .yearvalue {
+	background-color: transparent !important;
+}
+
+.selectiongroup {
+    display: none !important;
+}
+
+.mydrp {
+    border: 0 !important;
+}
+
+my-date-range-picker,
+.mydrp,
+.selector.selectorarrow.selectorarrowleft {
+    width: 100% !important;
+}

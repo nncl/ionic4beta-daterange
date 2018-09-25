@@ -4,6 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { MyDateRangePickerModule } from 'mydaterangepicker';
+import { NgxDateRangePickerModule } from 'ngx-daterangepicker';
+
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -16,7 +19,9 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    MyDateRangePickerModule,
+    NgxDateRangePickerModule
   ],
   declarations: [HomePage]
 })

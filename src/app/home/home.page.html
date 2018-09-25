@@ -7,6 +7,16 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<!-- 
+	<form #myForm="ngForm" novalidate>
+	    <my-date-range-picker name="mydaterange" [options]="myDateRangePickerOptions" #mydrp="mydaterangepicker"
+	                    [(ngModel)]="model" (dateRangeChanged)="onDateRangeChanged($event)" required></my-date-range-picker>
+	</form>
+
+	<pre>{{model | json}}</pre>
+
+	<ion-button (click)="openCalendar($event)">Open Calendar</ion-button> -->
+
+	<ngx-daterangepicker [(ngModel)]="value" [options]="options"></ngx-daterangepicker>
+
 </ion-content>
